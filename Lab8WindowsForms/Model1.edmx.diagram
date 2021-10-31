@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9dff404cc4da40e39789eb8f557e7266" Name="Diagram1">
+        <EntityTypeShape EntityType="lesyukModel.Address_c" Width="1.5" PointX="13.625" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="lesyukModel.Customer_adress" Width="1.5" PointX="11.25" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="lesyukModel.Customers" Width="1.5" PointX="10.375" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="lesyukModel.Hobbi" Width="1.5" PointX="13.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="lesyukModel.HobbyChangeLog" Width="1.5" PointX="0.875" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="lesyukModel.Manager" Width="1.5" PointX="7" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="lesyukModel.Mark_of_product" Width="1.5" PointX="8" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="lesyukModel.Product" Width="1.5" PointX="5.625" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="lesyukModel.Relatives" Width="1.5" PointX="13.125" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="lesyukModel.Customer_hobbi" Width="1.5" PointX="10.375" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="lesyukModel.database_firewall_rules" Width="2.75" PointX="1" PointY="2.875" IsExpanded="true" />
+        <AssociationConnector Association="lesyukModel.FK__Customer___Addre__0E6E26BF" ManuallyRouted="false" />
+        <AssociationConnector Association="lesyukModel.FK__Customer___Custo__0D7A0286" ManuallyRouted="false" />
+        <AssociationConnector Association="lesyukModel.FK__Customer___Custo__04E4BC85" ManuallyRouted="false" />
+        <AssociationConnector Association="lesyukModel.FK__Mark_of_p__Custo__160F4887" ManuallyRouted="false" />
+        <AssociationConnector Association="lesyukModel.FK__Relatives__Custo__08B54D69" ManuallyRouted="false" />
+        <AssociationConnector Association="lesyukModel.FK__Customer___hobbi__05D8E0BE" ManuallyRouted="false" />
+        <AssociationConnector Association="lesyukModel.FK__Product__Manager__1332DBDC" ManuallyRouted="false" />
+        <AssociationConnector Association="lesyukModel.FK__Mark_of_p__Produ__17036CC0" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
