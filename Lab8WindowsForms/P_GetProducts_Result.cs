@@ -10,24 +10,13 @@
 namespace Lab8WindowsForms
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Product
+    public partial class P_GetProducts_Result
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Product()
-        {
-            this.Mark_of_product = new HashSet<Mark_of_product>();
-        }
-    
         public int Id { get; set; }
         public string P_name { get; set; }
         public string Category { get; set; }
+        public string PIB { get; set; }
         public string P_description { get; set; }
-        public Nullable<int> Manager_id { get; set; }
-    
-        public virtual Manager Manager { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Mark_of_product> Mark_of_product { get; set; }
     }
 }

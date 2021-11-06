@@ -27,10 +27,13 @@ namespace Lab8WindowsForms
             Product product = productBindingSource.Current as Product;
             Manager manager = (Manager)manager_idComboBox.SelectedItem;
             
+
             if (product != null)
             {
+                product.Manager_id = manager.Id;
                 ValidationContext context = new ValidationContext(product, null, null);
                 IList<ValidationResult> errors = new List<ValidationResult>();
+                
                 if (!Validator.TryValidateObject(product, context, errors, true))
                 {
                     foreach (ValidationResult result in errors)
@@ -39,9 +42,11 @@ namespace Lab8WindowsForms
                         return;
                     }
                 }
-                product.Manager_id = manager.Id;
+                
                 _context.Product.Add(product);
+                _context.SaveChanges();
             }
+            Close();
         }
 
         private void AddProductForm_Load(object sender, EventArgs e)

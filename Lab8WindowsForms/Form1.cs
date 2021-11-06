@@ -26,7 +26,7 @@ namespace Lab8WindowsForms
 
         private void getProducts_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = _context.Product.ToList();
+            dataGridView1.DataSource = _context.P_GetProducts();
             dataGridView1.Refresh();
         }
 

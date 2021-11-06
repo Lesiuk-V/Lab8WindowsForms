@@ -136,5 +136,10 @@ namespace Lab8WindowsForms
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<P_SelectCustomersReport3_Result>("P_SelectCustomersReport3");
         }
+    
+        public virtual ObjectResult<P_GetProducts_Result> P_GetProducts()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<P_GetProducts_Result>("P_GetProducts");
+        }
     }
 }
